@@ -1,3 +1,35 @@
 *{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
+h1, h2, h3, h4, h5, h6, .font-nunito{
+  font-family: 'Nunito', sans-serif;
+}
+button{
+  padding: 12px 22px !important;
+}
+.icn-font{
+  font-size: 50px;
+  /* color: rgb(175, 175, 175); */
+  color: #fe3ea5;
+}
+.text-color-gray{
+  color: rgb(131, 131, 131);
+}
+.secondary-bg{
+background-color: #fe3ea5;
+}
+.secondary-text{
+  color: #fe3ea5;
+}
+.single-service:hover .text-hover{
+  color: #fe3ea5;
+}
+.text-custom-color{
+  color: #464646;
+}
+/* 
+font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif;
+secondary-color: #fe3ea5
+primary-info-boot: #0dcaf0
+*/

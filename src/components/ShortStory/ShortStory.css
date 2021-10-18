@@ -1,0 +1,22 @@
+.story-bg{
+background-color: #F5F8FB;
+}
+.line-height{
+    line-height: 27px;
+}
+.bg-patients{
+    background-color: #E3E9F6;
+    color: #8392b3;
+}
+.bg-doctors{
+    background-color: #E4F1F0;
+    color: #86b3b0;
+}
+.bg-rooms{
+    background-color: #F5F1EB;
+    color: #c0b099;
+}
+.bg-award{
+    background-color: #E2E4E8;
+    color: #909090;
+}
