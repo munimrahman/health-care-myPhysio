@@ -74,7 +74,7 @@ const Header = () => {
                                 <Link className="nav-link btn btn-outline-info shadow-none me-3 ms-2 fw-bold sign-in-btn" to="/sign-in">Sign In</Link>
                             </li>}
                             {!user.email && <li className="nav-item">
-                                <Link className="nav-link btn btn-info shadow-none fw-bold text-white" to="/contact-us">Sign Up <i className="fas fa-long-arrow-alt-right"></i></Link>
+                                <Link className="nav-link btn btn-info shadow-none fw-bold text-white" to="/sign-up">Sign Up <i className="fas fa-long-arrow-alt-right"></i></Link>
                             </li>}
                         </ul>
                     </div>

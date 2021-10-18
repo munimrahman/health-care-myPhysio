@@ -10,6 +10,7 @@ import Service from './components/Service/Service';
 import Services from './components/Services/Services';
 import Shop from './components/Shop/Shop';
 import SignIn from './components/SignIn/SignIn';
+import SignUp from './components/SignUp/SignUp';
 import AuthProvider from './context/AuthProvider';
 
 function App() {
@@ -45,6 +46,9 @@ function App() {
             </Route>
             <Route exact path="/sign-in">
               <SignIn></SignIn>
+            </Route>
+            <Route exact path="/sign-up">
+              <SignUp></SignUp>
             </Route>
           </Switch>
           <Footer></Footer>
