@@ -50,6 +50,29 @@ const Header = () => {
                             <li class="nav-item">
                                 <Link class="nav-link" to="/contact-us">Contact Us</Link>
                             </li>
+                            <li class="nav-item dropdown fw-bold">
+                                <Link class="nav-link dropdown-toggle" to="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="https://avatars.githubusercontent.com/u/53802153?v=4" className="user-img me-2" alt="" />
+                                    User Name
+                                </Link>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <Link class="dropdown-item hover-color" to="/">Your Profile</Link>
+                                    </li>
+                                    <li>
+                                        <Link class="dropdown-item hover-color" to="/">Your Orders</Link>
+                                    </li>
+                                    <li>
+                                        <Link class="dropdown-item hover-color" to="/">Sign Out <i class="fas fa-sign-out-alt fs-5 text-secondary"></i></Link>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <Link class="nav-link" to="/contact-us">Sign In</Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link class="nav-link" to="/contact-us">Sign Up <i class="fas fa-long-arrow-alt-right"></i></Link>
+                            </li>
                         </ul>
                     </div>
                 </div >

@@ -1,0 +1,44 @@
+const data = [
+    {
+        id: 1,
+        name: "Activ Roll",
+        price: 12,
+        img: "https://i.ibb.co/58Jnc8W/activroll-compressor.jpg",
+        des: "Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa."
+    },
+    {
+        id: 2,
+        name: "Exercise Ball",
+        price: 40,
+        img: "https://i.ibb.co/yf4dp9s/exerciseball-compressor.jpg",
+        des: "Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa."
+    },
+    {
+        id: 3,
+        name: "Insole",
+        price: 55,
+        img: "https://i.ibb.co/0Cdyzmz/insole-compressor.jpg",
+        des: "Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa."
+    },
+    {
+        id: 4,
+        name: "Medical Tape",
+        price: 25,
+        img: "https://i.ibb.co/frdxvhp/medicaltape-compressor.jpg",
+        des: "Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa."
+    },
+    {
+        id: 5,
+        name: "Positioning Pillow",
+        price: 35,
+        img: "https://i.ibb.co/BqjmsJ3/positioning-pillow-compressor.jpg",
+        des: "Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa."
+    },
+    {
+        id: 6,
+        name: "Rollers",
+        price: 60,
+        img: "https://i.ibb.co/Kz0hBgf/silverrollers-compressor.jpg",
+        des: "Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa."
+    },
+]
