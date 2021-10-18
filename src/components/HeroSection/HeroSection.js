@@ -16,9 +16,9 @@ const HeroSection = () => {
                     <div class="carousel-item active">
                         <div className="row d-flex container mx-auto align-items-center">
                             <div className="col-md-6">
-                                <p>HELPING YOU LIVE LIFE</p>
-                                <h2>We offer highly specialized treatments</h2>
-                                <button className="btn btn-info rounded-pill">More About Us</button>
+                                <small className="secondary-text fw-bold">HELPING YOU LIVE LIFE</small>
+                                <h1 className="py-3 lh-base">We Offer Highly <br /><span className="font-nunito fw-bold secondary-text">Specialized Treatments</span></h1>
+                                <button className="btn btn-info rounded-pill fw-bold text-white">More About Us</button>
                             </div>
                             <div className="col-md-6">
                                 <img src={img1} className="img-fluid" alt="" />
@@ -28,9 +28,9 @@ const HeroSection = () => {
                     <div class="carousel-item">
                         <div className="row d-flex container mx-auto align-items-center">
                             <div className="col-md-6">
-                                <p>SUPERIOR EXPERTISE</p>
-                                <h2>We’ve been in business since 1996</h2>
-                                <button className="btn btn-info rounded-pill">Book Appointment</button>
+                                <small className="secondary-text fw-bold">SUPERIOR EXPERTISE</small>
+                                <h1 className="py-3 lh-base">We’ve Been In Business <br /><span className="font-nunito fw-bold secondary-text">Since 1996</span></h1>
+                                <button className="btn btn-info rounded-pill fw-bold text-white">Book Appointment</button>
                             </div>
                             <div className="col-md-6">
                                 <img src={img2} className="img-fluid" alt="" />
@@ -40,9 +40,9 @@ const HeroSection = () => {
                     <div class="carousel-item">
                         <div className="row d-flex container mx-auto align-items-center">
                             <div className="col-md-6">
-                                <p>GOAL-ORIENTED APPROACH</p>
-                                <h2>A practice built on honesty and integrity</h2>
-                                <button className="btn btn-info rounded-pill">Get in Touch</button>
+                                <small className="secondary-text fw-bold">GOAL-ORIENTED APPROACH</small>
+                                <h1 className="py-3 lh-base">A Practice Built On <br /><span className="font-nunito fw-bold secondary-text">Honesty & Integrity</span></h1>
+                                <button className="btn btn-info rounded-pill fw-bold text-white">Get in Touch</button>
                             </div>
                             <div className="col-md-6">
                                 <img src={img3} className="img-fluid" alt="" />
