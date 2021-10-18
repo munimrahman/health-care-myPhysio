@@ -6,3 +6,6 @@
     border: 1px solid #0dcaf0;
     border-radius: 50px;
 }
+.sign-in-btn:hover{
+    color: white !important;
+}

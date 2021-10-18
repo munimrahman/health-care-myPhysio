@@ -10,7 +10,7 @@ const MeetTeam = () => {
             <div className="container row mx-auto justify-content-center">
                 <div className="col-12 col-md-3 rounded shadow py-4  m-3">
                     <span className="rating">
-                        <i class="fas fa-star text-info"></i> <span className="text-info">4.5</span>
+                        <i className="fas fa-star text-info"></i> <span className="text-info">4.5</span>
                     </span>
                     <div className="d-flex flex-column align-items-center">
                         <div className="team-img-size shadow">
@@ -23,19 +23,19 @@ const MeetTeam = () => {
                     <hr />
                     <div className="d-flex justify-content-center">
                         <div className="border social-icon d-flex justify-content-center align-items-center">
-                            <i class="fab fa-facebook  secondary-text"></i>
+                            <i className="fab fa-facebook  secondary-text"></i>
                         </div>
                         <div className="border social-icon d-flex justify-content-center align-items-center">
-                            <i class="fas fa-envelope-open  secondary-text"></i>
+                            <i className="fas fa-envelope-open  secondary-text"></i>
                         </div>
                         <div className="border social-icon d-flex justify-content-center align-items-center">
-                            <i class="fas fa-phone-alt secondary-text"></i>
+                            <i className="fas fa-phone-alt secondary-text"></i>
                         </div>
                     </div>
                 </div>
                 <div className="col-12 col-md-3 rounded shadow py-4  m-3">
                     <span className="rating">
-                        <i class="fas fa-star text-info"></i> <span className="text-info">4.5</span>
+                        <i className="fas fa-star text-info"></i> <span className="text-info">4.5</span>
                     </span>
                     <div className="d-flex flex-column align-items-center">
                         <div className="team-img-size shadow">
@@ -48,19 +48,19 @@ const MeetTeam = () => {
                     <hr />
                     <div className="d-flex justify-content-center">
                         <div className="border social-icon d-flex justify-content-center align-items-center">
-                            <i class="fab fa-facebook  secondary-text"></i>
+                            <i className="fab fa-facebook  secondary-text"></i>
                         </div>
                         <div className="border social-icon d-flex justify-content-center align-items-center">
-                            <i class="fas fa-envelope-open  secondary-text"></i>
+                            <i className="fas fa-envelope-open  secondary-text"></i>
                         </div>
                         <div className="border social-icon d-flex justify-content-center align-items-center">
-                            <i class="fas fa-phone-alt secondary-text"></i>
+                            <i className="fas fa-phone-alt secondary-text"></i>
                         </div>
                     </div>
                 </div>
                 <div className="col-12 col-md-3 rounded shadow py-4  m-3">
                     <span className="rating">
-                        <i class="fas fa-star text-info"></i> <span className="text-info">4.5</span>
+                        <i className="fas fa-star text-info"></i> <span className="text-info">4.5</span>
                     </span>
                     <div className="d-flex flex-column align-items-center">
                         <div className="team-img-size shadow">
@@ -73,19 +73,19 @@ const MeetTeam = () => {
                     <hr />
                     <div className="d-flex justify-content-center">
                         <div className="border social-icon d-flex justify-content-center align-items-center">
-                            <i class="fab fa-facebook  secondary-text"></i>
+                            <i className="fab fa-facebook  secondary-text"></i>
                         </div>
                         <div className="border social-icon d-flex justify-content-center align-items-center">
-                            <i class="fas fa-envelope-open  secondary-text"></i>
+                            <i className="fas fa-envelope-open  secondary-text"></i>
                         </div>
                         <div className="border social-icon d-flex justify-content-center align-items-center">
-                            <i class="fas fa-phone-alt secondary-text"></i>
+                            <i className="fas fa-phone-alt secondary-text"></i>
                         </div>
                     </div>
                 </div>
                 <div className="col-12 col-md-3 rounded shadow py-4  m-3">
                     <span className="rating">
-                        <i class="fas fa-star text-info"></i> <span className="text-info">4.5</span>
+                        <i className="fas fa-star text-info"></i> <span className="text-info">4.5</span>
                     </span>
                     <div className="d-flex flex-column align-items-center">
                         <div className="team-img-size shadow">
@@ -98,19 +98,19 @@ const MeetTeam = () => {
                     <hr />
                     <div className="d-flex justify-content-center">
                         <div className="border social-icon d-flex justify-content-center align-items-center">
-                            <i class="fab fa-facebook  secondary-text"></i>
+                            <i className="fab fa-facebook  secondary-text"></i>
                         </div>
                         <div className="border social-icon d-flex justify-content-center align-items-center">
-                            <i class="fas fa-envelope-open  secondary-text"></i>
+                            <i className="fas fa-envelope-open  secondary-text"></i>
                         </div>
                         <div className="border social-icon d-flex justify-content-center align-items-center">
-                            <i class="fas fa-phone-alt secondary-text"></i>
+                            <i className="fas fa-phone-alt secondary-text"></i>
                         </div>
                     </div>
                 </div>
                 <div className="col-12 col-md-3 rounded shadow py-4  m-3">
                     <span className="rating">
-                        <i class="fas fa-star text-info"></i> <span className="text-info">4.5</span>
+                        <i className="fas fa-star text-info"></i> <span className="text-info">4.5</span>
                     </span>
                     <div className="d-flex flex-column align-items-center">
                         <div className="team-img-size shadow">
@@ -123,13 +123,13 @@ const MeetTeam = () => {
                     <hr />
                     <div className="d-flex justify-content-center">
                         <div className="border social-icon d-flex justify-content-center align-items-center">
-                            <i class="fab fa-facebook  secondary-text"></i>
+                            <i className="fab fa-facebook  secondary-text"></i>
                         </div>
                         <div className="border social-icon d-flex justify-content-center align-items-center">
-                            <i class="fas fa-envelope-open  secondary-text"></i>
+                            <i className="fas fa-envelope-open  secondary-text"></i>
                         </div>
                         <div className="border social-icon d-flex justify-content-center align-items-center">
-                            <i class="fas fa-phone-alt secondary-text"></i>
+                            <i className="fas fa-phone-alt secondary-text"></i>
                         </div>
                     </div>
                 </div>

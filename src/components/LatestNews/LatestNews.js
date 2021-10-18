@@ -14,39 +14,39 @@ const LatestNews = () => {
                 <button className="btn btn-info rounded-pill text-white fw-bold shadow-none">Read all News</button>
             </div>
             <div className="col-12 col-md-9">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card h-100 shadow">
-                            <img src={news1} class="card-img-top" alt="..." />
-                            <div class="card-body">
+                <div className="row row-cols-1 row-cols-md-3 g-4">
+                    <div className="col">
+                        <div className="card h-100 shadow">
+                            <img src={news1} className="card-img-top" alt="..." />
+                            <div className="card-body">
                                 <Link className="text-info text-decoration-none" to="">
-                                    <h6 class="card-title fw-bold line-height">Identifying And Treating Pain From Nerve Tension</h6>
+                                    <h6 className="card-title fw-bold line-height">Identifying And Treating Pain From Nerve Tension</h6>
                                 </Link>
-                                <p class="card-text">Nerve tension is pain that occurs because a nerve is being compressed or stuck in its surrounding tissue which prevents...</p>
+                                <p className="card-text">Nerve tension is pain that occurs because a nerve is being compressed or stuck in its surrounding tissue which prevents...</p>
                                 <Link className="text-decoration-none fw-bold secondary-text" to="">Read Post &gt;</Link>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card h-100 shadow">
-                            <img src={news2} class="card-img-top" alt="..." />
-                            <div class="card-body">
+                    <div className="col">
+                        <div className="card h-100 shadow">
+                            <img src={news2} className="card-img-top" alt="..." />
+                            <div className="card-body">
                                 <Link className="text-info text-decoration-none" to="">
-                                    <h6 class="card-title fw-bold line-height">Therapy Found Effective for Carpal Tunnel Syndrome</h6>
+                                    <h6 className="card-title fw-bold line-height">Therapy Found Effective for Carpal Tunnel Syndrome</h6>
                                 </Link>
-                                <p class="card-text">Customized physical therapy may be a useful way to ease low back pain, which affects an estimated 31 million Americans...</p>
+                                <p className="card-text">Customized physical therapy may be a useful way to ease low back pain, which affects an estimated 31 million Americans...</p>
                                 <Link className="text-decoration-none fw-bold secondary-text" to="">Read Post &gt;</Link>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card h-100 shadow">
-                            <img src={news3} class="card-img-top" alt="..." />
-                            <div class="card-body">
+                    <div className="col">
+                        <div className="card h-100 shadow">
+                            <img src={news3} className="card-img-top" alt="..." />
+                            <div className="card-body">
                                 <Link className="text-info text-decoration-none" to="">
-                                    <h6 class="card-title fw-bold line-height">Myth: Physical Therapy is only for Injuries and Accidents</h6>
+                                    <h6 className="card-title fw-bold line-height">Myth: Physical Therapy is only for Injuries and Accidents</h6>
                                 </Link>
-                                <p class="card-text">Physical therapists do a lot more than just stretch or strengthen weak muscles after an injury or surgery. They are...</p>
+                                <p className="card-text">Physical therapists do a lot more than just stretch or strengthen weak muscles after an injury or surgery. They are...</p>
                                 <Link className="text-decoration-none fw-bold secondary-text" to="">Read Post &gt;</Link>
                             </div>
                         </div>
