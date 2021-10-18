@@ -1,0 +1,13 @@
+footer, tr{
+    color: #C1C7CE;
+}
+.footer-main{
+    background-image: url(../../Images/footer-bg.png);
+}
+.footer-icn-font{
+    font-size: 50px;
+    color: rgb(202, 202, 202);
+}
+.footer-title-color{
+    color: #fdffff;
+}
