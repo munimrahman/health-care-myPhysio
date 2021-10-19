@@ -1,7 +1,9 @@
 import React from 'react';
+import useServices from '../../hooks/useServices';
 import SingleHomeService from '../SingleHomeService/SingleHomeService';
 
 const HomeServices = () => {
+    const services = useServices();
     return (
         <div className="services mt-5">
             <div className="row d-flex align-items-center mx-5">
@@ -9,12 +11,12 @@ const HomeServices = () => {
                 <p className="col-12 col-md-8 my-0">We are proud to offer a wide range of comprehensive services to meet the needs of adults, seniors, and pediatric patients. Our team of professional caregivers specialize in providing personalized medical care, rehabilitative therapy and companion assistance.</p>
             </div>
             <div className="container service row row-cols-1 row-cols-md-3 mt-4 mx-auto g-4">
-                <SingleHomeService></SingleHomeService>
-                <SingleHomeService></SingleHomeService>
-                <SingleHomeService></SingleHomeService>
-                <SingleHomeService></SingleHomeService>
-                <SingleHomeService></SingleHomeService>
-                <SingleHomeService></SingleHomeService>
+                {
+                    services.map(service => <SingleHomeService
+                        key={service.id}
+                        service={service}
+                    ></SingleHomeService>)
+                }
             </div>
         </div>
     );

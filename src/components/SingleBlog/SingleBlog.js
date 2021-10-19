@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './SingleBlog.css'
 
 const SingleBlog = () => {
@@ -18,7 +19,8 @@ const SingleBlog = () => {
                 <hr />
                 <h1 className="fs-2 fw-bold blog-title py-3">Identifying And Treating Pain From Nerve Tension</h1>
                 <p>Nerve tension is pain that occurs because a nerve is being compressed or stuck in its surrounding tissue which prevents it from moving within its tract like it normally does. This can happen for a variety of reasons. If a joint has been immobile for a period of time it increases the risk that a nerve can get a little stuck</p>
-                <p className="fw-bold secondary-text text-decoration-underline">Read More</p>
+                <Link to='/blogs/blog-post'>
+                    <p className="fw-bold secondary-text text-decoration-underline">Read More</p></Link>
             </div>
         </div>
     );

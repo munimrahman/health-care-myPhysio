@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": "1",
         "title": "Physical Therapy",
         "subtitle1": "We provide Physical Therapy services",
         "subtitle2": "Our services included all types and sizes",
@@ -12,7 +12,7 @@
         "img2": "https://i.ibb.co/gmBbwdN/services1-2.jpg"
     },
     {
-        "id": 2,
+        "id": "2",
         "title": "Massage Therapy",
         "subtitle1": "Overall Wellness and Relaxation",
         "subtitle2": "All types of Massage Therapies",
@@ -24,7 +24,7 @@
         "img2": "https://i.ibb.co/mbYTjn6/service-2-2.jpg"
     },
     {
-        "id": 3,
+        "id": "3",
         "title": "Chiropractic Therapy",
         "subtitle1": "What is Wellness Chiropractic?",
         "subtitle2": "Speciality Pilates equipment",
@@ -36,7 +36,7 @@
         "img2": "https://i.ibb.co/cJgQL42/service-3-2.jpg"
     },
     {
-        "id": 4,
+        "id": "4",
         "title": "Sport Injuries",
         "subtitle1": "Focus on your Rehabilitation",
         "subtitle2": "Sport & Exercise Medicine Services",
@@ -48,7 +48,7 @@
         "img2": "https://i.ibb.co/3kvJ0mV/service-4-2.jpg"
     },
     {
-        "id": 5,
+        "id": "5",
         "title": "Clinical Pilates",
         "subtitle1": "What is Clinical Pilates?",
         "subtitle2": "How does Clinical Pilates exercises work?",
@@ -60,7 +60,7 @@
         "img2": "https://i.ibb.co/XbJq4z9/service-5-2.jpg"
     },
     {
-        "id": 6,
+        "id": "6",
         "title": "Work Injuries",
         "subtitle1": "Work Rehabilitation Program",
         "subtitle2": "What are the Therapy benefits?",

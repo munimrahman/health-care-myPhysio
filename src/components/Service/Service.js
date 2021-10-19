@@ -1,30 +1,36 @@
 import React from 'react';
+import { useParams } from 'react-router';
+import useServices from '../../hooks/useServices';
 import './Service.css'
 
 const Service = () => {
+    const { serviceID } = useParams();
+    const services = useServices();
+    const service = services.filter(service => service.id === serviceID)
+    const { title, subtitle1, subtitle2, para1, para2, para3, para4, img1, img2 } = service[0] || {};
     return (
         <div>
             <div className="text-white section-header bg-linear text-center mb-5">
-                <h1 className="fw-bold pt-5 font-size-custom">Service Details</h1>
-                <h6 className="pb-5">Home &gt; Service &gt; Service Details</h6>
+                <h1 className="fw-bold pt-5 font-size-custom">{title}</h1>
+                <h6 className="pb-5">Home &gt; Service &gt; {title}</h6>
             </div>
             <div className="row container mx-auto service-details">
                 <div className="row col-12 col-md-9">
                     <div className="col-12 col-md-6">
-                        <img src="https://demos.qreativethemes.com/physio/wp-content/uploads/sites/3/2015/12/physio_03.jpg" className="img-fluid rounded pb-3" alt="" />
+                        <img src={img1} className="img-fluid rounded pb-3" alt="" />
                     </div>
                     <div className="col-12 col-md-6">
-                        <h6 className="fw-bold text-info fs-5">We provide Physical Therapy services</h6>
-                        <p className="service-font-size">Your personal physical therapy begins with a comprehensive evaluation of functional limitations and areas of pain. Our team of expert physical therapists will design a treatment plan based on your work-related needs and goals. We take a team approach and will consult with your employer and case manager, if necessary. Throughout your treatment, we will work hard to help you return to all normal functional activities.</p>
-                        <p className="service-font-size">When you are ready for discharge, you will receive a personalized home exercise program to allow you to stay healthy on the job, further enhance your rehabilitation.</p>
+                        <h6 className="fw-bold text-info fs-5">{subtitle1}</h6>
+                        <p className="service-font-size">{para1}</p>
+                        <p className="service-font-size">{para2}</p>
                     </div>
                     <div className="col-12 col-md-6">
-                        <h6 className="fw-bold text-info fs-5">Our services included all types and sizes</h6>
-                        <p className="service-font-size">We take a team approach and will consult with your employer and case manager, if necessary. Throughout your treatment, we will work hard to help you return to all normal functional activities. When you are ready for discharge, you will receive a personalized home exercise-program to allow you to stay healthy. </p>
-                        <p className="service-font-size">Our experienced team of physiotherapists will perform a comprehensive assessment, including postural and biomechanical assessments, to diagnose your problem.</p>
+                        <h6 className="fw-bold text-info fs-5">{subtitle2}</h6>
+                        <p className="service-font-size">{para3}</p>
+                        <p className="service-font-size">{para4}</p>
                     </div>
                     <div className="col-12 col-md-6">
-                        <img src="https://demos.qreativethemes.com/physio/wp-content/uploads/sites/3/2015/12/physio_09.jpg" className="img-fluid rounded pb-3" alt="" />
+                        <img src={img2} className="img-fluid rounded pb-3" alt="" />
                     </div>
                     {/* price table */}
                     <div>

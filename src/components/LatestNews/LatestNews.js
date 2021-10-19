@@ -11,7 +11,9 @@ const LatestNews = () => {
                 <h1>Latest <span className="fw-bold secondary-text font-nunito">News and Research</span></h1>
                 <p>Find out the latest news about our Physiotherapy Clinic and information about all your Physiotherapy and health related needs.</p>
                 <p>We are always happy to hear what you have to say so be sure to leave a comment.</p>
-                <button className="btn btn-info rounded-pill text-white fw-bold shadow-none">Read all News</button>
+                <Link to="/blogs">
+                    <button className="btn btn-info rounded-pill text-white fw-bold shadow-none">Read all News</button>
+                </Link>
             </div>
             <div className="col-12 col-md-9">
                 <div className="row row-cols-1 row-cols-md-3 g-4">
@@ -19,11 +21,11 @@ const LatestNews = () => {
                         <div className="card h-100 shadow">
                             <img src={news1} className="card-img-top" alt="..." />
                             <div className="card-body">
-                                <Link className="text-info text-decoration-none" to="">
+                                <Link className="text-info text-decoration-none" to="/blogs/blog-post">
                                     <h6 className="card-title fw-bold line-height">Identifying And Treating Pain From Nerve Tension</h6>
                                 </Link>
                                 <p className="card-text">Nerve tension is pain that occurs because a nerve is being compressed or stuck in its surrounding tissue which prevents...</p>
-                                <Link className="text-decoration-none fw-bold secondary-text" to="">Read Post &gt;</Link>
+                                <Link className="text-decoration-none fw-bold secondary-text" to="/blogs/blog-post">Read Post &gt;</Link>
                             </div>
                         </div>
                     </div>
@@ -31,11 +33,11 @@ const LatestNews = () => {
                         <div className="card h-100 shadow">
                             <img src={news2} className="card-img-top" alt="..." />
                             <div className="card-body">
-                                <Link className="text-info text-decoration-none" to="">
+                                <Link className="text-info text-decoration-none" to="/blogs/blog-post">
                                     <h6 className="card-title fw-bold line-height">Therapy Found Effective for Carpal Tunnel Syndrome</h6>
                                 </Link>
                                 <p className="card-text">Customized physical therapy may be a useful way to ease low back pain, which affects an estimated 31 million Americans...</p>
-                                <Link className="text-decoration-none fw-bold secondary-text" to="">Read Post &gt;</Link>
+                                <Link className="text-decoration-none fw-bold secondary-text" to="/blogs/blog-post">Read Post &gt;</Link>
                             </div>
                         </div>
                     </div>
@@ -43,11 +45,11 @@ const LatestNews = () => {
                         <div className="card h-100 shadow">
                             <img src={news3} className="card-img-top" alt="..." />
                             <div className="card-body">
-                                <Link className="text-info text-decoration-none" to="">
+                                <Link className="text-info text-decoration-none" to="/blogs/blog-post">
                                     <h6 className="card-title fw-bold line-height">Myth: Physical Therapy is only for Injuries and Accidents</h6>
                                 </Link>
                                 <p className="card-text">Physical therapists do a lot more than just stretch or strengthen weak muscles after an injury or surgery. They are...</p>
-                                <Link className="text-decoration-none fw-bold secondary-text" to="">Read Post &gt;</Link>
+                                <Link className="text-decoration-none fw-bold secondary-text" to="/blogs/blog-post">Read Post &gt;</Link>
                             </div>
                         </div>
                     </div>

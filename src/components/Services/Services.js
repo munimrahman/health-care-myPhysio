@@ -1,7 +1,9 @@
 import React from 'react';
+import useServices from '../../hooks/useServices';
 import SingleHomeService from '../SingleHomeService/SingleHomeService';
 
 const Services = () => {
+    const services = useServices();
     return (
         <div>
             <div className="text-white section-header bg-linear text-center mb-5">
@@ -9,12 +11,12 @@ const Services = () => {
                 <h6 className="pb-5">Home &gt; About Us</h6>
             </div>
             <div className="container service row row-cols-1 row-cols-md-3 mt-4 mx-auto g-4 mb-5">
-                <SingleHomeService></SingleHomeService>
-                <SingleHomeService></SingleHomeService>
-                <SingleHomeService></SingleHomeService>
-                <SingleHomeService></SingleHomeService>
-                <SingleHomeService></SingleHomeService>
-                <SingleHomeService></SingleHomeService>
+                {
+                    services.map(service => <SingleHomeService
+                        key={service.id}
+                        service={service}
+                    ></SingleHomeService>)
+                }
             </div>
         </div>
     );
