@@ -1,0 +1,23 @@
+.section-header{
+padding: 30px 0px;
+}.font-size-custom{
+    font-size: 70px;
+}
+.service-font-size{
+    font-size: 14px;
+}
+.side-text-color{
+    color: #e6eef8;
+}
+.service-list{
+    border-bottom-right-radius: 50px;
+}
+.side-table{
+    background-color: #F5F8FB;
+}
+.side-table >table>tbody>tr{
+    color: black;
+}
+.price-table-text>tr{
+    color: black;
+}

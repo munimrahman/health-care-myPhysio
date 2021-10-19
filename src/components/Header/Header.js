@@ -6,7 +6,6 @@ import './Header.css'
 
 const Header = () => {
     const { user, logOut } = useAuth();
-    console.log(user);
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light py-0">
@@ -18,7 +17,7 @@ const Header = () => {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <ul className="navbar-nav ms-auto pe-3 mb-3 mb-lg-0">
                             <li className="nav-item">
                                 <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
                             </li>
@@ -71,7 +70,7 @@ const Header = () => {
                                 </ul>
                             </li>}
                             {!user.email && <li className="nav-item">
-                                <Link className="nav-link btn btn-outline-info shadow-none me-3 ms-2 fw-bold sign-in-btn" to="/sign-in">Sign In</Link>
+                                <Link className="nav-link btn btn-outline-info shadow-none me-3 mb-1 ms-2 fw-bold sign-in-btn" to="/sign-in">Sign In</Link>
                             </li>}
                             {!user.email && <li className="nav-item">
                                 <Link className="nav-link btn btn-info shadow-none fw-bold text-white" to="/sign-up">Sign Up <i className="fas fa-long-arrow-alt-right"></i></Link>

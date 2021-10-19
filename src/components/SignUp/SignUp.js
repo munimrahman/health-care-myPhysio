@@ -1,8 +1,11 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import useAuth from '../../hooks/useAuth';
 
 const SignUp = () => {
-    const { error, setName, setEmail, setPassword, signUp } = useAuth();
+    const { error, setName, setUserName, setError, setEmail, setPassword, signUp } = useAuth();
+    const history = useHistory();
+    const redirectURL = '/'
 
     const getName = e => {
         setName(e.target.value)
@@ -13,6 +16,18 @@ const SignUp = () => {
     const getPassword = e => {
         setPassword(e.target.value)
     }
+    const handleSignUp = () => {
+        signUp()
+            .then(result => {
+                setUserName()
+                history.push(redirectURL)
+                window.location.reload()
+            })
+            .catch(error => {
+                const errorMessage = error.message;
+                setError(errorMessage)
+            })
+    }
     return (
         <div>
             <h1>This is sign up page</h1>
@@ -21,7 +36,7 @@ const SignUp = () => {
                 <input onBlur={getName} type="text" name="name" id="" />
                 <input onBlur={getEmail} type="email" name="" id="" />
                 <input onBlur={getPassword} type="password" name="" id="" />
-                <button onClick={signUp}>Sign Up</button>
+                <button onClick={handleSignUp}>Sign Up</button>
             </div>
         </div>
     );

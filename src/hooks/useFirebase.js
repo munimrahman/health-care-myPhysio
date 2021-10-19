@@ -17,11 +17,8 @@ const useFirebase = () => {
 
     const signInUsingGoogle = () => {
         setIsLoading(true)
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                setUser(result.user)
-            })
-            .finally(() => setIsLoading(false))
+        return signInWithPopup(auth, googleProvider);
+
     }
 
     // Sign Up With Email Password
@@ -30,27 +27,12 @@ const useFirebase = () => {
             setError("Password should be at least 6 characters")
             return;
         }
-        createUserWithEmailAndPassword(auth, email, password)
-            .then(result => {
-                setUserName()
-            })
-            .catch(error => {
-                const errorMessage = error.message;
-                setError(errorMessage)
-            })
+        return createUserWithEmailAndPassword(auth, email, password);
     }
     // Sign In With Email Password
     const signInUsingEmailPassword = () => {
         setIsLoading(true)
-        signInWithEmailAndPassword(auth, email, password)
-            .then(result => {
-                setUser(result.user)
-            })
-            .catch((error) => {
-                const errorMessage = error.message;
-                setError(errorMessage)
-            })
-            .finally(() => setIsLoading(false))
+        return signInWithEmailAndPassword(auth, email, password);
     }
     // Set User Name
     const setUserName = () => {
@@ -83,6 +65,10 @@ const useFirebase = () => {
         user,
         error,
         isLoading,
+        setError,
+        setUserName,
+        setUser,
+        setIsLoading,
         setName,
         setEmail,
         setPassword,

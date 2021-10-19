@@ -26,7 +26,11 @@ background-color: #fe3ea5;
 .text-custom-color{
   color: #464646;
 }
+.bg-linear{
+  background-image: linear-gradient(to right top, #f467b3, #f75eb0, #f955ac, #fc4aa9, #fe3ea5);
+}
 /* 
+background-image: linear-gradient(to right top, #ed86bd, #f27ebc, #f675ba, #fb6bb8, #ff61b6);
 font-family: 'Nunito', sans-serif;
 font-family: 'Open Sans', sans-serif;
 secondary-color: #fe3ea5
