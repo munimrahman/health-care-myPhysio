@@ -1,6 +1,7 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import AboutUs from './components/AboutUs/AboutUs';
+import BlogPost from './components/BlogPost/BlogPost';
 import Blogs from './components/Blogs/Blogs';
 import ContactUs from './components/ContactUs/ContactUs';
 import Footer from './components/Footer/Footer';
@@ -36,6 +37,9 @@ function App() {
             </Route>
             <Route exact path="/blogs">
               <Blogs></Blogs>
+            </Route>
+            <Route exact path="/blogs/blog-post">
+              <BlogPost></BlogPost>
             </Route>
             <Route exact path="/shop">
               <Shop></Shop>

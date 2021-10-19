@@ -1,0 +1,6 @@
+.single-blog-bg{
+    background-color: #F5F8FB;
+}
+.single-blog-bg:hover .blog-title{
+    color: #fe3ea5;
+}

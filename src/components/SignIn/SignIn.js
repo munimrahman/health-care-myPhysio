@@ -1,9 +1,12 @@
 import React from 'react';
 import { useHistory, useLocation } from 'react-router';
+import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
+import './SignIn.css'
+import signInImg from "../../Images/signin.png"
 
 const SignIn = () => {
-    const { error, setError, setUserName, user, setUser, setEmail, setIsLoading, setPassword, logOut, signInUsingGoogle, signInUsingEmailPassword } = useAuth();
+    const { error, setError, user, setUser, setEmail, setIsLoading, setPassword, logOut, signInUsingGoogle, signInUsingEmailPassword } = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirectURL = location.state?.from || '/'
@@ -14,6 +17,10 @@ const SignIn = () => {
             .then(result => {
                 setUser(result.user)
                 history.push(redirectURL)
+            })
+            .catch(error => {
+                const errorMessage = error.message;
+                setError(errorMessage)
             })
             .finally(() => setIsLoading(false))
     }
@@ -40,15 +47,38 @@ const SignIn = () => {
     }
     return (
         <div>
-            <h1>{user.email}</h1>
-            <h1>This is sign in page</h1>
-            {!user.displayName && <button onClick={handleGoogleSignIn}>Google Sign In</button>}
-            {user.displayName && <button onClick={logOut}>Lg Out</button>}
-            <h4>{error}</h4>
-            <div>
-                <input onBlur={getEmail} type="email" />
-                <input onBlur={getPassword} type="password" />
-                <button onClick={handleEmailSignIn}>Sign In</button>
+            <div className="row mx-3 d-flex align-items-center">
+                <div className="col-12 col-md-6">
+                    <h1 className="text-success text-center">{user.email}</h1>
+                    <h1 className="text-info fw-bold text-center">Sign In</h1>
+                    <div className="w-50 mx-auto">
+                        <div className="mb-3">
+                            <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
+                            <input type="email" onBlur={getEmail} className="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                        </div>
+                        <div className="mb-2">
+                            <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
+
+                            <input type="password" onBlur={getPassword} className="form-control shadow-none" id="exampleInputPassword1" />
+                        </div>
+                        <div className="d-flex justify-content-between mb-2">
+                            <small className="">New member? <Link to="sign-up" className="text-decoration-none">Sign Up</Link> here.</small>
+                            <small><Link to="forgot-password" className="text-decoration-none">Forgot Password?</Link></small>
+                        </div>
+                        <h6 className="text-danger">{error}</h6>
+                        <div className="text-center mt-4">
+                            <button type="submit" onClick={handleEmailSignIn} className="btn btn-info text-white fw-bold rounded-pill shadow-none">Sign In</button>
+                        </div>
+                    </div>
+                    <p className="text-center my-3">Or, Sign In With</p>
+                    <div className="d-flex justify-content-center">
+                        <div onClick={handleGoogleSignIn} className="mx-3 cursor rounded bg-google text-white py-2 px-3"><i className="pe-3 fab fa-google"></i>Google</div>
+                        <div onClick="" className="mx-3 rounded bg-fb text-white py-2 px-3"><i className="pe-3 fab fa-facebook-f"></i>Facebook</div>
+                    </div>
+                </div>
+                <div className="col-12 col-md-6">
+                    <img src={signInImg} className="img-fluid" alt="" />
+                </div>
             </div>
         </div>
     );

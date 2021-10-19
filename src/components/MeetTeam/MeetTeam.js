@@ -2,13 +2,19 @@ import './MeetTeam.css'
 import person from '../../Images/team_03.jpg'
 
 import React from 'react';
+import Doctor from '../Doctor/Doctor';
 
 const MeetTeam = () => {
     return (
         <div className="my-5">
             <h1 className="text-center fw-bold mb-4">We Are Happy <span className="font-nunito secondary-text">To Help You</span></h1>
             <div className="container row mx-auto justify-content-center">
-                <div className="col-12 col-md-3 rounded shadow py-4  m-3">
+                <Doctor></Doctor>
+                <Doctor></Doctor>
+                <Doctor></Doctor>
+                <Doctor></Doctor>
+                <Doctor></Doctor>
+                {/* <div className="col-12 col-md-3 rounded shadow py-4  m-3">
                     <span className="rating">
                         <i className="fas fa-star text-info"></i> <span className="text-info">4.5</span>
                     </span>
@@ -132,7 +138,7 @@ const MeetTeam = () => {
                             <i className="fas fa-phone-alt secondary-text"></i>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );

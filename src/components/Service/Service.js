@@ -66,7 +66,7 @@ const Service = () => {
                     <div>
                         <form class="d-flex">
                             <input class="form-control me-2 shadow-none" type="search" placeholder="Search" aria-label="Search" />
-                            <button class="btn btn-info text-white fw-bold">Search</button>
+                            <button class="btn btn-info text-white fw-bold shadow-none">Search</button>
                         </form>
                     </div>
                     <div className="bg-info service-list mt-4 pb-4">
