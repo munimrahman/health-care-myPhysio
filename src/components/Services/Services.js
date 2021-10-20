@@ -4,6 +4,7 @@ import SingleHomeService from '../SingleHomeService/SingleHomeService';
 import BuyFromShop from '../BuyFromShop/BuyFromShop';
 
 const Services = () => {
+    // this is services page
     const services = useServices();
     return (
         <div>

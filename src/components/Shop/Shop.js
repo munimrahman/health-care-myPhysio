@@ -3,6 +3,7 @@ import useProducts from '../../hooks/useProduct';
 import ProductCard from '../ProductCard/ProductCard';
 
 const Shop = () => {
+    // Shpo page
     const products = useProducts();
     return (
         <div>
@@ -10,9 +11,6 @@ const Shop = () => {
                 <h1 className="fw-bold pt-5 font-size-custom">Shop</h1>
                 <h6 className="pb-5">Home &gt; Shop</h6>
             </div>
-            {/* <div className="e-75 d-flex justify-content-center">
-                <img src={comingSoonImg} className="img-fluid mx-auto" alt="" />
-            </div> */}
             <div className="container mt-5">
                 <div className="container d-flex justify-content-between mb-3">
                     <div className="mx-5">
@@ -20,8 +18,8 @@ const Shop = () => {
                     </div>
                     <div className="mx-5 d-flex">
                         <div className="mx-2">
-                            <select className="form-select form-select-sm shadow-none" aria-label=".form-select-sm example">
-                                <option selected>Select Category</option>
+                            <select className="form-select form-select-sm shadow-none" aria-label=".form-select-sm example" defaultValue={'DEFAULT'}>
+                                <option value="DEFAULT">Select Category</option>
                                 <option value="1">Body</option>
                                 <option value="2">Exercise</option>
                                 <option value="4">Physiotherapy</option>
@@ -29,8 +27,8 @@ const Shop = () => {
                             </select>
                         </div>
                         <div className="mx-2">
-                            <select className="form-select form-select-sm shadow-none" aria-label=".form-select-sm example">
-                                <option selected>Sort By</option>
+                            <select className="form-select form-select-sm shadow-none" aria-label=".form-select-sm example" defaultValue={'DEFAULT'}>
+                                <option value="DEFAULT">Sort By</option>
                                 <option value="1">Name</option>
                                 <option value="2">Price Low to High</option>
                                 <option value="2">Price High to Low</option>
@@ -40,7 +38,7 @@ const Shop = () => {
                     </div>
                 </div>
                 <div className="mb-5">
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div className="row row-cols-1 row-cols-md-3 g-4">
                         {
                             products.map(product => <ProductCard
                                 key={product.id}

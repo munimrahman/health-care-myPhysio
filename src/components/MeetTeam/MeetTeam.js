@@ -5,6 +5,7 @@ import Doctor from '../Doctor/Doctor';
 import useDoctors from '../../hooks/useDoctors';
 
 const MeetTeam = () => {
+    // meet the team section for home page
     const doctors = useDoctors();
     return (
         <div className="my-5">

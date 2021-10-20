@@ -6,12 +6,12 @@ import './SignIn.css'
 import signInImg from "../../Images/signin.png"
 
 const SignIn = () => {
-    const { error, setError, user, setUser, setEmail, setIsLoading, setPassword, logOut, signInUsingGoogle, signInUsingEmailPassword } = useAuth();
+    const { error, setError, user, setUser, setEmail, setIsLoading, setPassword, signInUsingGoogle, signInUsingEmailPassword } = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirectURL = location.state?.from || '/'
-    // console.log(location.state?.from);
 
+    // Handle Sign in Using google
     const handleGoogleSignIn = () => {
         signInUsingGoogle()
             .then(result => {
@@ -25,6 +25,7 @@ const SignIn = () => {
             .finally(() => setIsLoading(false))
     }
 
+    // Handle Sign in using email and password
     const handleEmailSignIn = () => {
         signInUsingEmailPassword()
             .then(result => {
@@ -39,9 +40,11 @@ const SignIn = () => {
 
     }
 
+    // get email from user
     const getEmail = e => {
         setEmail(e.target.value)
     }
+    // get password from user
     const getPassword = e => {
         setPassword(e.target.value)
     }
@@ -53,11 +56,11 @@ const SignIn = () => {
                     <h1 className="text-info fw-bold text-center">Sign In</h1>
                     <div className="w-50 mx-auto">
                         <div className="mb-3">
-                            <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
+                            <label htmlFor="exampleInputEmail1" className="form-label">Email Address <br /> <span className="demo-font">(Demo Email: munim@gmail.com)</span></label>
                             <input type="email" onBlur={getEmail} className="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp" />
                         </div>
                         <div className="mb-2">
-                            <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
+                            <label htmlFor="exampleInputPassword1" className="form-label">Password <br /><span className="demo-font">(Demo Pass: 123456)</span></label>
 
                             <input type="password" onBlur={getPassword} className="form-control shadow-none" id="exampleInputPassword1" />
                         </div>
@@ -73,7 +76,7 @@ const SignIn = () => {
                     <p className="text-center my-3">Or, Sign In With</p>
                     <div className="d-flex justify-content-center">
                         <div onClick={handleGoogleSignIn} className="mx-3 cursor rounded bg-google text-white py-2 px-3"><i className="pe-3 fab fa-google"></i>Google</div>
-                        <div onClick="" className="mx-3 rounded bg-fb text-white py-2 px-3"><i className="pe-3 fab fa-facebook-f"></i>Facebook</div>
+                        <div className="mx-3 rounded bg-fb text-white py-2 px-3"><i className="pe-3 fab fa-facebook-f"></i>Facebook</div>
                     </div>
                 </div>
                 <div className="col-12 col-md-6">

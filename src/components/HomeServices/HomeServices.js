@@ -3,6 +3,7 @@ import useServices from '../../hooks/useServices';
 import SingleHomeService from '../SingleHomeService/SingleHomeService';
 
 const HomeServices = () => {
+    // Home Service Section
     const services = useServices();
     return (
         <div className="services mt-5">

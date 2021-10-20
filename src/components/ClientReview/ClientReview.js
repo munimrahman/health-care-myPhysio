@@ -5,6 +5,7 @@ import personTwo from '../../Images/person-2.png'
 import personThree from '../../Images/person-3.png'
 
 const ClientReview = () => {
+    // Its a bootstrap slider, called from home
     return (
         <div className="review py-5">
             <h1 className="text-center">What Our <span className="fw-bold secondary-text font-nunito">Clients say</span></h1>

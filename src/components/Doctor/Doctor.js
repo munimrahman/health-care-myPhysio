@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Doctors.css'
 
 const Doctor = (props) => {
+    // Doctor Card called from home and about us
     const { id, name, img, position, des } = props.doctor;
     const url = `doctors/${id}`
     return (

@@ -8,16 +8,20 @@ const SignUp = () => {
     const { error, signInUsingGoogle, setIsLoading, setUser, setName, setUserName, setError, setEmail, setPassword, signUp } = useAuth();
     const history = useHistory();
     const redirectURL = '/'
-
+    // get user name
     const getName = e => {
         setName(e.target.value)
     }
+    // get user email
     const getEmail = e => {
         setEmail(e.target.value)
     }
+    // get user password
     const getPassword = e => {
         setPassword(e.target.value)
     }
+
+    // handle signup using google
     const handleGoogleSignIn = () => {
         signInUsingGoogle()
             .then(result => {
@@ -30,6 +34,8 @@ const SignUp = () => {
             })
             .finally(() => setIsLoading(false))
     }
+
+    // handle sign up using email and password
     const handleSignUp = () => {
         signUp()
             .then(result => {
@@ -72,7 +78,7 @@ const SignUp = () => {
                     <p className="text-center my-3">Or, Sign Up With</p>
                     <div className="d-flex justify-content-center">
                         <div onClick={handleGoogleSignIn} className="mx-3 cursor rounded bg-google text-white py-2 px-3"><i className="pe-3 fab fa-google"></i>Google</div>
-                        <div onClick="" className="mx-3 rounded bg-fb text-white py-2 px-3"><i className="pe-3 fab fa-facebook-f"></i>Facebook</div>
+                        <div className="mx-3 rounded bg-fb text-white py-2 px-3"><i className="pe-3 fab fa-facebook-f"></i>Facebook</div>
                     </div>
                 </div>
                 <div className="col-12 col-md-6">

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './SingleBlog.css'
 
 const SingleBlog = (props) => {
+    // This is blog post page
     const { id, title, img, para1, author, date, tags } = props.blog || {};
     const url = `/blogs/${id}`;
     return (

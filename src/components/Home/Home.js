@@ -11,6 +11,7 @@ import NewsLetter from '../NewsLetter/NewsLetter';
 import ShortStory from '../ShortStory/ShortStory';
 
 const Home = () => {
+    // this is home page
     return (
         <div>
             <HeroSection></HeroSection>

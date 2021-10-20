@@ -1,12 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import useBlogs from '../../hooks/useBlog';
-import news1 from '../../Images/news1.jpg'
-import news2 from '../../Images/news2.jpg'
-import news3 from '../../Images/news3.jpg'
 import SingleLatestNews from '../SingleLatestNews/SingleLatestNews';
 
 const LatestNews = () => {
+    // latest news section of home, show news from blog
     const blogs = useBlogs()
     return (
         <div className="row m-5">

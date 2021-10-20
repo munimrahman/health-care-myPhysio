@@ -6,6 +6,7 @@ const BuyFromShop = () => {
     const products = useProducts()
     const widgetProducts = products.slice(0, 4)
     return (
+        // It is a widget shop section. It is callded from home page and also related fields
         <div className="mx-5 my-5">
             <h1 className="">Buy From <span className="fw-bold font-nunito secondary-text">Our Shop</span></h1>
             <div className="row row-cols-1 row-cols-md-4 g-4 mt-2">

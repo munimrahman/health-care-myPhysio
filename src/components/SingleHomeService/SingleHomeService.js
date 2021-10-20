@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const SingleHomeService = (props) => {
+    // service card for home
     const { id, title, para1, img1 } = props.service;
     const url = `/services/${id}`
     return (

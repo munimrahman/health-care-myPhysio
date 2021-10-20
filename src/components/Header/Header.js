@@ -36,6 +36,7 @@ const Header = () => {
                             <li className="nav-item">
                                 <Link className="nav-link" to="/contact-us">Contact Us</Link>
                             </li>
+                            {/* If User Logged in user name showed here */}
                             {user.email && <li className="nav-item dropdown fw-bold">
                                 <Link className="nav-link dropdown-toggle" to="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <img src="https://avatars.githubusercontent.com/u/53802153?v=4" className="user-img me-2" alt="" />
@@ -53,9 +54,11 @@ const Header = () => {
                                     </li>
                                 </ul>
                             </li>}
+                            {/* sign in button */}
                             {!user.email && <li className="nav-item">
                                 <Link className="nav-link btn btn-outline-info shadow-none me-3 mb-1 ms-2 fw-bold sign-in-btn" to="/sign-in">Sign In</Link>
                             </li>}
+                            {/* sign up button */}
                             {!user.email && <li className="nav-item">
                                 <Link className="nav-link btn btn-info shadow-none fw-bold text-white" to="/sign-up">Sign Up <i className="fas fa-long-arrow-alt-right"></i></Link>
                             </li>}

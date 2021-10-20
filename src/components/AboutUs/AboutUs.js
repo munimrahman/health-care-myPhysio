@@ -7,11 +7,13 @@ const AboutUs = () => {
     const doctors = useDoctors();
     return (
         <div>
+            {/* About Us Hero Section */}
             <div className="text-white section-header bg-linear text-center mb-5">
                 <h1 className="fw-bold pt-5 font-size-custom">About Us</h1>
                 <h6 className="pb-5">Home &gt; About Us</h6>
             </div>
             <div className="row container mx-auto">
+                {/* Our Mission Vision Section */}
                 <div className="col-12 col-md-4">
                     <h1>Our <span className="fw-bold secondary-text font-nunito">Vision</span></h1>
                     <p className="service-font-size">To be a company that attracts, rewards, and retains highly skilled physical therapy staff. Our proactive approach to the development of best business practices and promotion of effective treatment methods will help us accomplish this.</p>
@@ -35,6 +37,7 @@ const AboutUs = () => {
                 </div>
                 <hr />
             </div>
+            {/* Our Therapists */}
             <h1 className="text-center my-3">Our <span className="fw-bold secondary-text font-nunito">Therapists</span></h1>
             <div className="container row mx-auto justify-content-center mb-5">
                 {
@@ -43,6 +46,7 @@ const AboutUs = () => {
                         doctor={doctor}
                     ></Doctor>)
                 }
+                {/* Hiring Message */}
                 <div className="col-12 col-md-3 rounded shadow py-4 bg-info m-3 px-4 text-white">
                     <h2 className="text-center text-white">We're <span className="fw-bold font-nunito">Hiring</span></h2>
                     <p className="line-height">If you're a Physical therapist looking to take your career to the next level, explore all the Physical Therapy career opportunities.</p>

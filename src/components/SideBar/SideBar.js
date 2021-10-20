@@ -1,12 +1,13 @@
 import React from 'react';
 
 const SideBar = () => {
+    // side bar
     return (
         <>
             <div>
-                <form class="d-flex">
-                    <input class="form-control me-2 shadow-none" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-info text-white fw-bold shadow-none">Search</button>
+                <form className="d-flex">
+                    <input className="form-control me-2 shadow-none" type="search" placeholder="Search" aria-label="Search" />
+                    <button className="btn btn-info text-white fw-bold shadow-none">Search</button>
                 </form>
             </div>
             <div className="bg-info service-list mt-4 pb-4">

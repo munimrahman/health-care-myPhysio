@@ -4,10 +4,10 @@ import useBlogs from '../../hooks/useBlog';
 import useProducts from '../../hooks/useProduct';
 import ProductCard from '../ProductCard/ProductCard';
 import SideBar from '../SideBar/SideBar';
-import SingleBlog from '../SingleBlog/SingleBlog';
 import './BlogPost.css'
 
 const BlogPost = () => {
+    // This Blog Post. Its a Private Route.
     const blogs = useBlogs();
     const { blogID } = useParams();
     const blogPost = blogs.filter(blogPost => blogPost.id === blogID)
@@ -47,27 +47,27 @@ const BlogPost = () => {
                         <h1 className="fs-2 fw-bold blog-title py-2 secondary-text">Leave a Reply</h1>
                         <p className="text-secondary service-font-size">Your email address will not be published. Required fields are marked *</p>
                         <div>
-                            <div class="row mb-3">
+                            <div className="row mb-3">
                                 <div className="col-12 col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label text-secondary">Name*</label>
-                                    <input type="text" class="form-control shadow-none" id="fullName" placeholder="Your Name" />
+                                    <label for="exampleFormControlInput1" className="form-label text-secondary">Name*</label>
+                                    <input type="text" className="form-control shadow-none" id="fullName" placeholder="Your Name" />
                                 </div>
                                 <div className="col-12 col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label text-secondary">Email Address*</label>
-                                    <input type="email" class="form-control shadow-none" id="emailId" placeholder="name@example.com" />
+                                    <label for="exampleFormControlInput1" className="form-label text-secondary">Email Address*</label>
+                                    <input type="email" className="form-control shadow-none" id="emailId" placeholder="name@example.com" />
                                 </div>
                                 <div className="col-12 col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label text-secondary">Website</label>
-                                    <input type="email" class="form-control shadow-none" id="website" placeholder="https://example.com" />
+                                    <label for="exampleFormControlInput1" className="form-label text-secondary">Website</label>
+                                    <input type="email" className="form-control shadow-none" id="website" placeholder="https://example.com" />
                                 </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label text-secondary">Comment*</label>
-                                <textarea class="form-control shadow-none" id="exampleFormControlTextarea1" rows="8"></textarea>
+                            <div className="mb-3">
+                                <label for="exampleFormControlTextarea1" className="form-label text-secondary">Comment*</label>
+                                <textarea className="form-control shadow-none" id="exampleFormControlTextarea1" rows="8"></textarea>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault" />
-                                <label class="form-check-label text-secondary" for="flexCheckDefault">
+                            <div className="form-check">
+                                <input className="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault" />
+                                <label className="form-check-label text-secondary" for="flexCheckDefault">
                                     Save my name, email, and website in this browser for the next time I comment.
                                 </label>
                             </div>

@@ -3,6 +3,7 @@ import './AdvantagesAndAsk.css'
 
 const AdvantagesAndAsk = () => {
     return (
+        // Our Advantages Section. It is called from home page
         <div className="mx-3">
             <div className="mt-3 mb-5">
                 <h1 className="mb-4 text-center">Our <span className="fw-bold font-nunito secondary-text">Advantages</span></h1>
@@ -36,7 +37,6 @@ const AdvantagesAndAsk = () => {
                     </div>
                     <div className="advantages-div row col-12 col-md-3 d-flex align-items-center justify-content-center shadow m-2 py-3 rounded px-3">
                         <div className="col-md-2 icn-div text-center">
-                            {/* <i className="fas fa-hospital-user advantages-icn-font"></i> */}
                             <i className="fas fa-user-check advantages-icn-font"></i>
                         </div>
                         <div className="ps-4 col-md-10 mt-3">

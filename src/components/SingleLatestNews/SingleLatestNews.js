@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const SingleLatestNews = (props) => {
+    // latest news card for home
     const { title, img, para1 } = props.news;
     return (
         <div className="col">

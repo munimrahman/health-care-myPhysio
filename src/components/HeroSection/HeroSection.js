@@ -5,6 +5,7 @@ import img3 from '../../Images/HeroImages/3.png'
 
 const HeroSection = () => {
     return (
+        // home page hero section, its bootstrap slider
         <div>
             <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-indicators">
