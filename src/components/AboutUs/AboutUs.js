@@ -1,8 +1,10 @@
 import React from 'react';
+import useDoctors from '../../hooks/useDoctors';
 import aboutImg from '../../Images/about_us.jpg'
 import Doctor from '../Doctor/Doctor';
 
 const AboutUs = () => {
+    const doctors = useDoctors();
     return (
         <div>
             <div className="text-white section-header bg-linear text-center mb-5">
@@ -35,11 +37,12 @@ const AboutUs = () => {
             </div>
             <h1 className="text-center my-3">Our <span className="fw-bold secondary-text font-nunito">Therapists</span></h1>
             <div className="container row mx-auto justify-content-center mb-5">
-                <Doctor></Doctor>
-                <Doctor></Doctor>
-                <Doctor></Doctor>
-                <Doctor></Doctor>
-                <Doctor></Doctor>
+                {
+                    doctors.map(doctor => <Doctor
+                        key={doctor.id}
+                        doctor={doctor}
+                    ></Doctor>)
+                }
                 <div className="col-12 col-md-3 rounded shadow py-4 bg-info m-3 px-4 text-white">
                     <h2 className="text-center text-white">We're <span className="fw-bold font-nunito">Hiring</span></h2>
                     <p className="line-height">If you're a Physical therapist looking to take your career to the next level, explore all the Physical Therapy career opportunities.</p>

@@ -26,7 +26,7 @@ const ContactUs = () => {
                         </div>
                         <div className="ms-4">
                             <h4>Email</h4>
-                            <p>brilian@email.com</p>
+                            <p>healthcare@gmail.com</p>
                         </div>
                     </div>
                     <div className="d-flex align-items-center">

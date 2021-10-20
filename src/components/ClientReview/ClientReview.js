@@ -1,8 +1,8 @@
 import React from 'react';
 import './ClientReviews.css'
-import personOne from '../../Images/person-1.jpg'
-import personTwo from '../../Images/person-2.jpg'
-import personThree from '../../Images/person-3.jpg'
+import personOne from '../../Images/person-1.png'
+import personTwo from '../../Images/person-2.png'
+import personThree from '../../Images/person-3.png'
 
 const ClientReview = () => {
     return (

@@ -1,7 +1,10 @@
 import React from 'react';
-import person from '../../Images/team_03.jpg'
+import { Link } from 'react-router-dom';
+import './Doctors.css'
 
-const Doctor = () => {
+const Doctor = (props) => {
+    const { id, name, img, position, des } = props.doctor;
+    const url = `doctors/${id}`
     return (
         <div className="col-12 col-md-3 rounded shadow py-4  m-3">
             <span className="rating">
@@ -9,11 +12,11 @@ const Doctor = () => {
             </span>
             <div className="d-flex flex-column align-items-center">
                 <div className="team-img-size shadow">
-                    <img src={person} className="img-fluid" alt="" />
+                    <img src={img} className="img-fluid doctor-img" alt="" />
                 </div>
-                <h3 className="mt-3">Dr. Nilla Roy</h3>
-                <h5 className="fw-bold secondary-text">Gynecologist</h5>
-                <p className="text-center">Aenean facilisis sodales est neciMorbi vitapurus on Est facilisisro convallis</p>
+                <h3 className="mt-3">{name}</h3>
+                <h5 className="fw-bold secondary-text">{position}</h5>
+                <p className="text-center">{des} <Link to={url} className="text-info">Read More</Link></p>
             </div>
             <hr />
             <div className="d-flex justify-content-center">

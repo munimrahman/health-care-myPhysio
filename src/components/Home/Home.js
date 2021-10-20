@@ -1,5 +1,6 @@
 import React from 'react';
 import AdvantagesAndAsk from '../AdvantagesAndAsk/AdvantagesAndAsk';
+import BuyFromShop from '../BuyFromShop/BuyFromShop';
 import ClientReview from '../ClientReview/ClientReview';
 import HeroSection from '../HeroSection/HeroSection';
 import HomeContactInfo from '../HomeContactInfo/HomeContactInfo';
@@ -21,6 +22,7 @@ const Home = () => {
             <MeetTeam></MeetTeam>
             <NewsLetter></NewsLetter>
             <LatestNews></LatestNews>
+            <BuyFromShop></BuyFromShop>
         </div>
     );
 };

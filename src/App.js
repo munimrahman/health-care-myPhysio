@@ -4,11 +4,13 @@ import AboutUs from './components/AboutUs/AboutUs';
 import BlogPost from './components/BlogPost/BlogPost';
 import Blogs from './components/Blogs/Blogs';
 import ContactUs from './components/ContactUs/ContactUs';
+import DoctorsProfile from './components/DoctorsProfile/DoctorsProfile';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import NotFound from './components/NotFound/NotFound';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import ProductDetails from './components/ProductDetails/ProductDetails';
 import Service from './components/Service/Service';
 import Services from './components/Services/Services';
 import Shop from './components/Shop/Shop';
@@ -38,14 +40,20 @@ function App() {
             <Route exact path="/blogs">
               <Blogs></Blogs>
             </Route>
-            <PrivateRoute exact path="/blogs/blog-post">
+            <PrivateRoute exact path="/blogs/:blogID">
               <BlogPost></BlogPost>
             </PrivateRoute>
             <Route exact path="/shop">
               <Shop></Shop>
             </Route>
+            <Route exact path="/shop/:productID">
+              <ProductDetails></ProductDetails>
+            </Route>
             <Route exact path="/about-us">
               <AboutUs></AboutUs>
+            </Route>
+            <Route exact path="/doctors/:doctorID">
+              <DoctorsProfile></DoctorsProfile>
             </Route>
             <Route exact path="/contact-us">
               <ContactUs></ContactUs>

@@ -9,7 +9,7 @@ const SingleHomeService = (props) => {
             <div className="card h-100 shadow">
                 <img src={img1} className="card-img-top" alt="..." />
                 <div className="card-body">
-                    <Link className="text-decoration-none text-dark" to="/services/service">
+                    <Link className="text-decoration-none text-dark" to={url}>
                         <h4 className="card-title text-hover fw-bold">{title}</h4>
                     </Link>
                     <p className="card-text">{para1.slice(1, 180)}...</p>

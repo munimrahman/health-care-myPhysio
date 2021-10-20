@@ -14,6 +14,9 @@ button{
 .text-color-gray{
   color: rgb(131, 131, 131);
 }
+.text-light-dark{
+  color: #464646;
+}
 .secondary-bg{
 background-color: #fe3ea5;
 }

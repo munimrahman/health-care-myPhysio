@@ -1,6 +1,7 @@
 import React from 'react';
 import useServices from '../../hooks/useServices';
 import SingleHomeService from '../SingleHomeService/SingleHomeService';
+import BuyFromShop from '../BuyFromShop/BuyFromShop';
 
 const Services = () => {
     const services = useServices();
@@ -18,6 +19,7 @@ const Services = () => {
                     ></SingleHomeService>)
                 }
             </div>
+            <BuyFromShop></BuyFromShop>
         </div>
     );
 };
